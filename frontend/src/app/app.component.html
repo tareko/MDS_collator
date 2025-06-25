@@ -1,0 +1,24 @@
+<h1>Form Entry</h1>
+<form (ngSubmit)="submitForm()" #form="ngForm">
+  <label>
+    Site:
+    <input [(ngModel)]="formData.site" name="site" required />
+  </label>
+  <br />
+  <label>
+    Date:
+    <input [(ngModel)]="formData.date" name="date" type="date" required />
+  </label>
+  <br />
+  <label>
+    User:
+    <input [(ngModel)]="formData.user" name="user" required />
+  </label>
+  <br />
+  <label>
+    Values:
+    <textarea [(ngModel)]="formData.values" name="values"></textarea>
+  </label>
+  <br />
+  <button type="submit">Submit</button>
+</form>
