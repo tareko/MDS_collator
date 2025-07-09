@@ -36,7 +36,7 @@ containers.
 Build and start the services:
 
 ```bash
-docker compose up --build
+docker-compose up --build
 ```
 
 The backend will be available on <http://localhost:3000> and the frontend on
