@@ -28,3 +28,16 @@ API URLs if needed.
 ## Export to XLSM
 The backend exposes `GET /api/export?site=SITE&date=DATE` which returns a generated
 `.xlsm` file containing all forms for the given site and date.
+
+## Running with Docker
+A `docker-compose.yml` is provided to run both the backend and frontend in
+containers.
+
+Build and start the services:
+
+```bash
+docker compose up --build
+```
+
+The backend will be available on <http://localhost:3000> and the frontend on
+<http://localhost:4200>.
